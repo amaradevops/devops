@@ -6,5 +6,10 @@ pipeline {
         build 'testjob'
       }
     }
+    stage('test') {
+      steps {
+        build 'test1'
+      }
+    }
   }
 }
