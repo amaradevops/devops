@@ -8,7 +8,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        build 'test1'
+        build(job: 'test1', quietPeriod: 1)
       }
     }
   }
